@@ -1,0 +1,380 @@
+html {
+    font-family:sans-serif ;
+}
+body {
+    margin: 0px;
+    width: 100%;
+   
+}
+@media all and (max-width: 874px){
+
+  
+    header {
+        background-color: white;
+        display: flex;
+        height: 60px;
+       
+        border-bottom:rgba(158, 153, 153,.7) 1px solid ;
+    }
+
+    header div {
+        margin-left: 40px;
+    }
+    header div hgroup {
+        color:black;
+    }
+    h2 {
+        display: none;
+    }
+    figure{
+        display: none;
+    }
+    .content {
+       
+        margin-top: 20px;
+    }
+    #about,
+    #competencies,
+    #experiences,
+    #education,
+    #hobbies,
+    #contact{
+        width:95%;
+        margin-left: 5%;
+       
+        }
+        #competencies {
+            margin-top: 20%;
+        }
+    #about p{
+        margin-top:px ;
+       
+        opacity: 0.5;
+    }    
+    #about h3{
+        display: none;
+    }
+    h3 {
+        border-bottom: black 1px solid;
+        font-size:25px ;
+    }
+    .skills-primary, .skills-secondary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .skill {
+        border: white 5px solid;
+        background-color: #006666;
+        color:white;
+        width: 150px;
+        margin-bottom:-10px ;
+       
+    }
+    .skills-primary {
+        height: 45px;
+    }
+    .skills-secondary{
+        height:30px ;
+    }
+    h4 {
+        color:#006666;
+       
+    }
+    h4 .experience-institution {
+        display: none;
+    }
+   
+     .experience-details{
+        opacity: 0.5;
+        float: right;
+        margin-top: -40px;
+     }
+     a {
+        display: none;
+     }
+     .contact-type, .contact-value{
+        display: none;
+     }
+     .contacts {
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .contact-email {
+        background: url("../images/email.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-phone {
+        background: url("../images/phone.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-github {
+        background: url("../images/github.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-facebook {
+        background: url("../images/facebook.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-skype {
+        grid-row-start: 3;
+    }
+    [data-skill="5"] span::after {
+        content: "\2605\2605\2605";
+   
+    }
+    [data-skill="3"] span::after {
+        content:"\2605\2605"
+    }
+    [data-skill="1"] span::after {
+        content: "\2605"
+    }
+    [data-skill="9"] span::after {
+        content: "\2605\2605\2605\2605\2605";
+    }
+    [data-skill="7"] span::after{
+        content:"\2605\2605\2605\2605"
+    }
+
+
+
+
+}
+@media all and (min-width: 874px) {
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1rem ;
+
+}
+
+header{
+    max-width: 1000px;
+    border-bottom: rgba(158, 153, 153,.7)1px solid ;
+}
+
+    header div {
+        display: flex;
+        width: 80%;
+        padding-left: 20px;
+        height: 100px;
+    }
+    h2 {
+        display: none;
+
+    }
+    figure{
+        position: absolute;
+        top: 1%;
+        right: 30%;
+
+    }
+    .content{
+        
+       
+        max-width: 1000px;
+        display: inline-block;
+   
+   
+    }
+   
+    h1 {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+    #about h3{
+        display: none;
+    }
+    #about p {
+        opacity: 0.5;
+        max-width: 700px;
+        padding-left: 20px;
+    }
+    #competencies {
+        padding-top:50px;
+    }
+    h3 {
+        font-size:25px ;
+        font-style: italic;
+        margin-bottom: 0%;
+       
+    }
+
+    .skills,
+    .experience {
+       
+        border-left: black 1px solid;
+        margin-left: 170px;
+        padding-left: 7px;
+    }
+
+    ul{
+        margin-left: 170px;
+        padding-left: 40px;
+        border-left: black 1px solid;
+    }
+
+img {
+    
+    width: 170%;
+    transform: rotate(-20deg);
+    
+
+}
+.skill {
+    border: white 5px solid;
+    background-color: #006666;
+    color:white;
+    width: 150px;
+    height: 40px;
+   align-items: center;
+    padding: 9px;
+
+   
+
+}
+.skills-primary {
+    height: 25%;
+}
+.skills-secondary{
+    height:25% ;
+}
+h4 {
+    color:#006666;
+   
+}
+h4 .experience-institution {
+    display: none;
+}
+
+ .experience-details{
+    opacity: 0.5;
+    float:right;
+    margin-top: -42px;
+ }
+ a {
+    display: none;
+ }
+ .contact-type, .contact-value{
+    display: none;
+ }
+ .contacts {
+    
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+div.contacts::before{
+    margin: 40%;
+    
+}
+.contact-email {
+    background: url("../images/email.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    
+}
+.contact-phone {
+    background: url("../images/phone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    margin-left: 0%;
+}
+
+.contact-github {
+    background: url("../images/github.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+}
+
+.contact-facebook {
+    background: url("../images/facebook.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+}
+
+.skills-primary, .skills-secondary {
+    display: flex;
+    flex-direction: row;
+    row-gap: 10%;
+}
+
+#contact h3 {
+    display:none;
+}
+span::before{
+    padding-left: 20%;
+    
+    
+}
+
+.skills-primary [data-skill="5"] span::after {
+   
+   content:"★★★";
+   height: 20%;
+   width: 20%;
+   padding-left: 15%;
+
+}
+.skills-primary [data-skill="3"] span::after {
+    content:"★★";
+   height: 20%;
+   width: 20%;
+   padding-left: 20%;
+}
+.skills-primary [data-skill="1"] span::after {
+    content:"★";
+   height: 20%;
+   width: 20%;
+   padding-left: 15%;
+}
+.skills-secondary [data-skill="9"] span::after {
+    content:"★★★★★";
+   height: 5%;
+   width: 5%;
+   padding-left: 20%;
+
+}
+.skills-secondary [data-skill="5"] span::after {
+    content:"★★★";
+   height: 5%;
+   width: 5%;
+   padding-left: 10%; 
+
+}
+.skills-secondary [data-skill="7"] span::after{
+    content:"★★★★";
+   height: 5%;
+   width: 5%;
+   padding-left: 10%;
+}
+
+}

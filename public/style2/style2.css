@@ -137,27 +137,53 @@ body {
     .contact-skype {
         grid-row-start: 3;
     }
-    [data-skill="5"] span::after {
-        content: "\2605\2605\2605";
-   
+    .skills-primary [data-skill="5"] span::after {
+       
+       content:"★★★";
+       height: 20%;
+       width: 20%;
+       padding-left: 15%;
+    
     }
-    [data-skill="3"] span::after {
-        content:"\2605\2605"
+    .skills-primary [data-skill="3"] span::after {
+        content:"★★";
+       height: 20%;
+       width: 20%;
+       padding-left: 20%;
     }
-    [data-skill="1"] span::after {
-        content: "\2605"
+    .skills-primary [data-skill="1"] span::after {
+        content:"★";
+       height: 20%;
+       width: 20%;
+       padding-left: 15%;
     }
-    [data-skill="9"] span::after {
-        content: "\2605\2605\2605\2605\2605";
+    .skills-secondary [data-skill="9"] span::after {
+        content:"★★★★★";
+       height: 5%;
+       width: 5%;
+       padding-left: 20%;
+    
     }
-    [data-skill="7"] span::after{
-        content:"\2605\2605\2605\2605"
+    .skills-secondary [data-skill="5"] span::after {
+        content:"★★★";
+       height: 5%;
+       width: 5%;
+       padding-left: 10%; 
+    
     }
-
+    .skills-secondary [data-skill="7"] span::after{
+        content:"★★★★";
+       height: 5%;
+       width: 5%;
+       padding-left: 10%;
+    }
 
 
 
 }
+
+/*---------------------------------------
+---------------------------------------------------------*/
 @media all and (min-width: 874px) {
 body {
     margin-left: 20%;

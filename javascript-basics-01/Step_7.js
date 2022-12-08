@@ -7,6 +7,7 @@ document.getElementById("validate").onclick= function(){
     var third= second*50;
     var fourth= third-birth;
     var fifth= fourth+1766;
+    
     alert (fifth);
 
 

@@ -1,7 +1,4 @@
-//let images = document.querySelectorAll("img[src='image1_2.jpg']");
-let images = document.querySelectorAll(".images");
+var image1 = document.querySelector('#image1').addEventListener("mouseover", function(){
+document.querySelector('#image1').src="images/image1_2.jpg";
 
-for (let i = 0; i < images.length; i++) {
-	let image = images[i];
-	alert(image.getAttribute(image1.jpg));
-}
+})

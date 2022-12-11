@@ -9,8 +9,8 @@ INSERT INTO students (id, name, Age, Gender, Points) VALUES (7, "Bodour", 25, "F
 UPDATE students SET Points = "400" WHERE name = "Basma";
 UPDATE students SET Points = 100 WHERE name = "Alex";
 
-
-*Creating Table exercise:*
+-----------------------------------------------------------------
+*Creating Table*
 -----------------------------------------------------------------------
 
 CREATE TABLE graduates (
@@ -29,3 +29,11 @@ SET Graduation = "2018-09-08"
 WHERE name = "Layal";
 DELETE FROM students WHERE name = "Layal";
 
+
+--------------------------------------------
+*Joins*
+--------------------------------------------
+
+SELECT employees.Name, employees.Company, companies.Date FROM employees JOIN companies ON employees.Company = companies.name;
+SELECT employees.Name FROM employees JOIN companies ON employees.Company = companies.name WHERE companies.Date < 2000;
+SELECT companies.Name FROM companies JOIN employees ON companies.name = employees.Company WHERE employees.Role = "Graphic Designer";

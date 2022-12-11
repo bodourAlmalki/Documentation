@@ -1,3 +1,6 @@
+
+*Basic Queries*
+
 SELECT name FROM students;
 SELECT * FROM students WHERE Age > 30;
 SELECT name FROM students WHERE Gender = "F" AND Age > 30;
@@ -5,3 +8,24 @@ SELECT Points FROM students WHERE name = "Alex";
 INSERT INTO students (id, name, Age, Gender, Points) VALUES (7, "Bodour", 25, "F", 800);
 UPDATE students SET Points = "400" WHERE name = "Basma";
 UPDATE students SET Points = 100 WHERE name = "Alex";
+
+
+*Creating Table exercise:*
+-----------------------------------------------------------------------
+
+CREATE TABLE graduates (
+	ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	Name TEXT NOT NULL UNIQUE,
+	Age INTEGER,
+	Gender TEXT,
+	Points INTEGER,
+	Graduation date
+);
+INSERT INTO graduates(ID, name, Age, Gender, Points) 
+SELECT ID, name, Age, Gender, Points FROM students 
+WHERE name = "Layal";
+UPDATE graduates 
+SET Graduation = "2018-09-08" 
+WHERE name = "Layal";
+DELETE FROM students WHERE name = "Layal";
+
